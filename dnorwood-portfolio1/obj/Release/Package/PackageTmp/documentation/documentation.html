@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Documentation – Estro</title>
+
+    <meta name="description" content="Documentation – Estro">
+    <meta name="author" content="ArtRow Team">
+
+    <link rel="shortcut icon" href="../static/images/fav.png" type="image/png">
+
+    <link href="styles/documentation.css" rel="stylesheet" media="screen">
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body data-spy="scroll" data-target="#affix-nav" data-offset-top="60">
+
+<div class="documentation-wrapper">
+
+    <div class="sidebar-fixed">
+        <div class="sidebar">
+            <h4>Estro / <small>HTML Virtual card template</small></h4>
+            <div class="separator"></div>
+            <h6 class="text-muted">Documentation</h6>
+            <nav id="affix-nav">
+                <ul class="nav nav-sidebar">
+                    <li><a href="#doc-01">About Template</a></li>
+                    <li><a href="#doc-02">Template Pack</a>
+                        <ul>
+                            <li><a href="#doc-0201">Folders and files</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#doc-03">General guidelines</a>
+                        <ul>
+                            <li><a href="#doc-0301">HTML structure</a></li>
+                            <li><a href="#doc-0302">Navigation</a></li>
+                            <li><a href="#doc-0303">Welcome section</a></li>
+                            <li><a href="#doc-0304">Portfolio</a></li>
+                            <li><a href="#doc-0305">My clients</a></li>
+                            <li><a href="#doc-0306">Google map</a></li>
+                            <li><a href="#doc-0307">Feedback form</a></li>
+                            <li><a href="#doc-0308">Blog</a></li>
+                            <li><a href="#doc-0309">Drawer</a></li>
+                            <li><a href="#doc-0310">Tilt effect</a></li>
+                            <li><a href="#doc-0311">Responsive layout</a></li>
+                            <li><a href="#doc-0312">Retina support</a></li>
+                            <li><a href="#doc-0313">Themes</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#doc-04">Styles</a>
+                        <ul>
+                            <li><a href="#doc-0401">Location</a></li>
+                            <li><a href="#doc-0402">Styles description</a></li>
+                            <li><a href="#doc-0403">Vendor styles</a></li>
+                            <li><a href="#doc-0404">LESS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#doc-05">Scripts</a>
+                        <ul>
+                            <li><a href="#doc-0501">Location and content</a></li>
+                            <li><a href="#doc-0502">Template  scripts</a></li>
+                            <li><a href="#doc-0503">Vendor scripts</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#doc-06">Help / FAQ</a>
+                        <ul>
+                            <li><a href="#doc-0601"></a></li>
+                        </ul>
+                    </li> -->
+                    <li><a href="#doc-07">Releases and Updates</a></li>
+                    <li><a href="#doc-08">Credits</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="content">
+<!-- 01 -->
+        <section>
+            <h2 id="doc-01">About Template</h2>
+            <div class="separator half"></div>
+            <p>Estro is an HTML template for a virtual card and a blog.</p>
+            <p>The template is built on the basis of a popular library – <a href="http://getbootstrap.com/" target="_blank">Bootstrap</a>. Along with standard scripts, Estro uses <a href="http://bower.io" target="_blank">Bower</a> package manager for uploading and updating libraries. The scripts are divided into simple parts. You can easily activate or disable any feature.<br>
+            Estro includes the following sections: welcome section, about me section, resume section, portfolio section, contacts with a working feedback form and a blog.</p>
+            <div class="welcome-btns">
+                <a href="http://team.artrow.net/templates/estro/index.html" class="btn btn-primary">Visit template's online page</a>
+            </div>
+        </section>
+<!-- 01 -->
+<!-- 02 -->
+        <section>
+            <h2 id="doc-02">Template Pack</h2>
+            <div class="separator half"></div>
+
+            <h3 id="doc-0201">Folders and files</h3>
+            <p>Here is a file structure of the package:</p>
+            <ul>
+                <li><strong class="text-primary">documentation </strong>– folder with documentation</li>
+                <li><strong class="text-primary">static </strong>– folder with content
+                    <ul>
+                        <li><strong class="text-primary">images </strong>– folder with all images</li>
+                        <li><strong class="text-primary">scripts </strong>– folder with custom scripts for template</li>
+                        <li><strong class="text-primary">styles </strong>– folder with custom CSS and LESS</li>
+                        <li><strong class="text-primary">vendor </strong>– folder with vendor scripts and plugins</li>
+                        <li><strong class="text-primary">video </strong>– folder with video files (+ poster image)</li>
+                    </ul>
+                </li>
+                <li><strong>html files</strong></li>
+                <li><strong>php files</strong></li>
+            </ul>
+        </section>
+<!-- 02 -->
+<!-- 03 -->
+        <section>
+            <h2 id="doc-03">General guidelines</h2>
+            <div class="separator half"></div>
+            <h3 id="doc-0301">HTML structure</h3>
+            <p>There are a basic HTML-schemes:</p>
+            <h4>Main HTML</h4>
+<pre>
+<span class="text-primary"><strong>Navigation</strong></span>
+<span class="text-muted">Main navigation</span>
+
+<span class="text-primary"><strong>Content section</strong></span>
+    <span><strong>Welcome section</strong></span>
+    <span class="text-muted">Background images, background video, logo and welcome message</span>
+
+    <span><strong>About me section</strong></span>
+    <span class="text-muted">Photo and text about you</span>
+
+    <span><strong>Resume section</strong></span>
+    <span class="text-muted">Information about employment, education and skills</span>
+
+    <span><strong>Works section</strong></span>
+    <span class="text-muted">Featured works and portfolio grid with filter</span>
+
+    <span><strong>Contacts section</strong></span>
+    <span class="text-muted">Personal information, google map, feedback form</span>
+
+    <span><strong>Footer</strong></span>
+    <span class="text-muted">Site information, copyrights, socials</span>
+
+<span class="text-primary"><strong>Left Drawer</strong></span>
+<span class="text-muted">Left Drawer with toggle</span>
+</pre>
+
+            <h4>Blog HTML</h4>
+<pre>
+<span class="text-primary"><strong>Content section</strong></span>
+    <span><strong>Blog section</strong></span>
+    <span class="text-muted">Blog topics, search</span>
+
+    <span><strong>Footer</strong></span>
+    <span class="text-muted">Site information, copyrights, socials</span>
+
+<span class="text-primary"><strong>Left Drawer</strong></span>
+<span class="text-muted">Left Drawer with toggle</span>
+</pre>
+
+            <h4>Topic HTML</h4>
+<pre>
+<span class="text-primary"><strong>Content section</strong></span>
+    <span><strong>Topic header</strong></span>
+    <span class="text-muted">Navigation between topics</span>
+
+    <span><strong>Topic content</strong></span>
+    <span class="text-muted">Topic body</span>
+
+    <span><strong>Comments</strong></span>
+    <span class="text-muted">Section for comments</span>
+
+    <span><strong>Footer</strong></span>
+    <span class="text-muted">Site information, copyrights, socials</span>
+</pre>
+            
+            <h3 id="doc-0302">Navigation</h3>
+            <p>Template uses bootstrap navbar. More information you can find <a href="http://getbootstrap.com/components/#navbar" target="_blank">here</a>.</p>
+
+            <h4>Customizing</h4>
+            <p>Navigation has two basic styles: colored and black. By default navbar is colored to main color. For using black style you can only add class <strong><em>.black-style</em></strong>. to <strong>&lt;nav&gt;</strong>.</p>
+<pre>
+&lt;nav class="<span class="text-primary">navbar navbar-default navbar-fixed-top</span>"&gt; <span class="text-muted">required classes for navigation</span>
+&lt;nav class="navbar navbar-default navbar-fixed-top <span class="text-primary">black-style</span>"&gt; <span class="text-muted">black style for navigation</span>
+</pre>
+            <p>When a page is scrolled, a new class <strong><em>.navbar-scrolled</em></strong> is added to the navigation. This class is responsible for colorizing the navigation.</p>
+
+            <h3 id="doc-0303">Welcome section</h3>
+            <p>Welcome section has some variants for background:
+                <ul>
+                    <li>– Static Image</li>
+                    <li>– Parallax Image</li>
+                    <li>– Image slider</li>
+                    <li>– Video (local source)</li>
+                </ul>
+            </p>
+
+            <h4>Fullscreen option</h4>
+            <p>Welcome section can be resized to a fullscreen area. Use class <strong><em>.js-fullscreen</em></strong> for this option.</p>
+<pre>
+&lt;section class="welcome-section-wrapper <span class="text-primary">js-fullscreen</span>"&gt;
+    &lt;div class="welcome-section-inner <span class="text-primary">container</span>"&gt;
+        ...
+    &lt;/div&gt;    
+&lt;/section&gt;
+</pre>
+
+            <div class="doc-note">Class <strong><em>.container</em></strong> is needed inside. Without this class script doesn't work.</div>
+
+            <h4>Static image</h4>
+            <p>Set static image background in less/css. Change 'background' for 'body' class <strong><em>.static-image</em></strong>.</p>
+<pre>
+body<strong>.static-image</strong> {
+  ...
+  background: <span class="text-primary">url(".../background.jpg")</span> no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</pre>
+or open <strong>theme.less</strong>:
+<pre>
+<strong>@background-static-image:</strong> url(<span class="text-primary">".../static_welcome_bg.jpg"</span>); <span class="text-muted">//only for static welcome image bg</span>
+</pre>
+            <p>Add this class to <strong>&lt;body&gt;</strong></p>
+<pre>
+&lt;body class="<span class="text-primary">static-image</span>">&gt;
+    ...
+&lt;/body&gt;
+</pre>
+            <h5>Overlay</h5>
+            <p>For using color overlay for static image add class <strong><em>.overlay</em></strong> to <strong>&lt;body&gt;</strong>.</p>
+
+            <div class="doc-note">This static image (with overlay) displays as background in all templates between sections include footer. If you want to use different backgrounds use css to create it.</div>
+
+            <h4>Parallax image</h4>
+            <p>Connect to an html following scripts and add class <strong><em>'.js-welcome-parallax'</em></strong> to the section <em><strong>'.welcome-wrapper'</em></strong>.</p>
+<pre>
+&lt;script src="static/vendor/parallax.js/<strong>parallax.min.js</strong>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- parallax main library (parallax.js plugin) --&gt;</span>
+&lt;script src="static/scripts/<strong>parallax.js</strong>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- init and settings for parallax backgrounds --&gt;</span>
+</pre>
+<pre>
+&lt;section class="welcome-wrapper <span class="text-primary">js-welcome-parallax</span>"&gt;
+    ...
+&lt;/section&gt;
+</pre>
+            <p>You can change background image in <strong>parallax.js</strong>.</p>
+<pre>
+<span class="text-muted">// Select background for welcome section</span>
+$('<strong>.js-welcome-parallax</strong>').parallax({
+    imageSrc: <span class="text-primary">'static/images/backgrounds/background.jpg'</span>,
+    position: 'center top'
+});
+</pre>
+
+            <h4>Image Slider</h4>
+            <p>Sliding images via a jQuery plugin <a href="http://vegas.jaysalvat.com" target="_blank">VEGAS</a>. Connect following files for using this feature:</p>
+<pre>
+<strong>CSS</strong>
+&lt;link href="static/vendor/vegas/dist/<span class="text-primary">vegas.min.css</span>" rel="stylesheet" media="screen"&gt;
+<span class="text-muted">&lt;!-- Vegas slideshow styles --&gt;</span>
+<strong>JS</strong>
+&lt;script src="static/vendor/vegas/<span class="text-primary">vegas.min.js</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- Vegas background slideshow --&gt;</span>
+&lt;script src="static/scripts/<span class="text-primary">vegas.js</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- init and settings for Vegas --&gt;</span>
+</pre>
+            <p>Use class <strong><em>.js-bg-slides</em></strong>.</p>
+<pre>
+&lt;section class="welcome-section-wrapper js-fullscreen <span class="text-primary">js-bg-slides</span>"&gt;...&lt;/section&gt;
+</pre>
+            <p>Settings are in the <strong>static/scripts/vegas.js</strong>. There you can select images for sliding.</p>
+
+            <h4>Video</h4>
+            <p>Background video implemented via <a href="https://github.com/VodkaBears/Vide" target="_blank">Vide</a>. Connect following scripts for using this feature:</p>
+<pre>
+&lt;script src="static/vendor/vide/dist/<span class="text-primary">jquery.vide.min.js</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- background video (vide.js plugin) --&gt;</span>
+&lt;script src="static/scripts/<span class="text-primary">videobg.js</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- init and settings for background video --&gt;</span>
+</pre>
+            <p>Settings are in the <strong>static/scripts/videobg.js</strong>. There you can select videos.</p>
+            <p>Use class <strong><em>.js-bg-video</em></strong></p>
+<pre>
+&lt;section class="welcome-section-wrapper js-fullscreen <span class="text-primary">js-bg-video</span>"&gt;...&lt;/section&gt;
+</pre>
+            <p>Use class <strong><em>.overlay</em></strong> to body to fill video by a color. It's same overlay for static image.</p>
+<pre>
+&lt;div class="background-video js-bg-video <span class="text-primary">overlay</span>"&gt;&lt;/div&gt;
+</pre>
+
+            <h3 id="doc-0304">Portfolio</h3>
+            <p>Portfolio includes two sections: featured works and grid with filter.</p>
+            <h4>Featured works</h4>
+            <p>Featured section based on bootstrap carousel. More information you can find <a href="http://getbootstrap.com/javascript/#carousel" target="_blank">here</a>.</p>
+
+            <h4>Portfolio grid</h4>
+            <p>Grid based on <a href="http://isotope.metafizzy.co" target="_blank">Isotope</a> script.</p>
+
+            <h5>Filtering</h5>
+            <p>Works are filtered by Isotope. How use this feature you can find more information <a href="http://isotope.metafizzy.co/filtering.html" target="_blank">here</a>.</p>
+
+            <h5>Loading portfolio</h5>
+            <p>All works are located in <strong>portfolio_content.html</strong>. Last of them are loaded automatically, then by pressing the button "Load more...". For using this feature you need a server. It can be not work locally.</p>
+
+            <h4>Scripts</h4>
+            <p>Connect to an html the following scripts:</p>
+<pre>
+&lt;script src="static/vendor/isotope/dist/<span class="text-primary">isotope.pkgd.min.js</span>"&gt;&lt;/script&gt;<span class="text-muted">main library for portfolio grid</span>
+&lt;script src="static/scripts/<span class="text-primary">portfolio.js</span>"&gt;&lt;/script&gt; <span class="text-muted">autoloading portfolio works</span>
+</pre>
+
+            <h4>Image preview</h4>
+            <p>Full-size preview implemented via <a href="http://fancyapps.com/fancybox/" trget="_blank">Fancybox 2</a> script. For using this plugin you need connect the following files:</p>
+<pre>
+<strong>CSS</strong>
+<span class="text-muted">&lt;!-- Fancybox2 styles --&gt;</span>
+&lt;link href="static/vendor/fancybox/source/<span class="text-primary">jquery.fancybox.css?v=2.1.5</span>" rel="stylesheet" media="screen" /&gt;
+
+<strong>JS</strong>
+<span class="text-muted">&lt;!-- fancybox main library (fancybox 2 plugin) --&gt;</span>
+&lt;script src="static/vendor/fancybox/source/<span class="text-primary">jquery.fancybox.pack.js?v=2.1.5</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- mousewheel plugin (fancybox 2 plugin. Optional) --&gt;</span>
+&lt;script src="static/vendor/fancybox/lib/<span class="text-primary">jquery.mousewheel-3.0.6.pack.js</span>"&gt;&lt;/script&gt;
+<span class="text-muted">&lt;!-- init and settings for fancybox --&gt;</span>
+&lt;script src="static/scripts/<span class="text-primary">fancybox.js</span>"&gt;&lt;/script&gt;
+</pre>
+
+            <h3 id="doc-0305">My clients</h3>
+            <p>This section based on <a href="http://www.owlcarousel.owlgraphic.com" target="_blank">Owl carouse</a>. How to use it you can fin information on official site.</p>
+            <p>Connect the following files to use this feature:</p>
+<pre>
+<strong>CSS</strong>
+&lt;link href="static/vendor/owl.carousel/src/css/<span class="text-primary">owl.carousel.css</span>" rel="stylesheet" media="screen"&gt;
+
+<strong>JS</strong>
+&lt;script src="static/vendor/owl.carousel/src/js/<span class="text-primary">owl.carousel.js</span>"&gt;&lt;/script&gt;
+</pre>
+            
+            <h3 id="doc-0306">Google map</h3>
+            <p>Google map implemented via <a href="https://hpneo.github.io/gmaps/" target="_blank">gmaps.js</a></p>
+            <p>Connect the following scripts to use this feature:</p>
+<pre>
+&lt;script src="<span class="text-primary">https://maps.googleapis.com/maps/api/js</span>"&gt;&lt;/script&gt;
+&lt;script src="static/vendor/gmaps/<span class="text-primary">gmaps.min.js</span>"&gt;&lt;/script&gt;
+&lt;script src="static/scripts/<span class="text-primary">maps.js</span>"&gt;&lt;/script&gt;
+</pre>
+
+            <h4>Set point</h4>
+            <p>For setting marker you need edit an html. Find gmap section and edit settings:</p>
+<pre>
+&lt;div id="google-map-container" class="google-map-container" <span class="text-primary">data-lat="-00.000000" data-lng="-00.000000</span>"&gt;&lt;/div&gt;
+</pre>
+
+            <h3 id="doc-0307">Feedback form</h3>
+            <p>The contact form is working and has validation. It sends a message to the required address. To change the email address, please refer to: <em>feedback.php</em></p>
+<pre>
+$emailTo = '<span class="text-primary">mail@mail.com</span>';
+</pre>
+
+            <h3 id="doc-0308">Blog</h3>
+            <p>Blog includes some kinds of topic's preview: simple image, image slider, youtube, vimeo, soundcloud, etc. Additional blog options located in a left drawer.</p>
+
+            <h4>Blog topic</h4>
+            <p>Each topic is in a separate html-file. Topic page includes navigation between previous and next topics, topic body and cooments section. Comments section provided only as a template. This section doesn't work.</p>
+
+            <h3 id="doc-0309">Drawer</h3>
+            <p>The template has left drawer. It is a block with some information. Drawer appears and hide by click on a button. The button is displayed in the form of a logo.</p>
+            <h4>The button</h4>
+<pre>
+&lt;div class="js-drawer-toggle drawer-toggle" data-target=".drawer-wrapper"&gt;
+    &lt;div class="icon-drawer-wrapper"&gt;
+        <span class="text-muted">place your logo here</span>
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            <h4>The left drawer</h4>
+<pre>
+&lt;div class="drawer-wrapper hide"&gt;
+    &lt;div class="scrollable"&gt;
+        &lt;div class="tilt-effect-wrapper photo-main"&gt;
+            <span class="text-muted">place your photo here</span>
+        &lt;/div&gt;
+        &lt;div class="drawer-inside text-white"&gt;
+            <span class="text-muted">place your information here</span>
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+            
+            <h3 id="doc-0310">Tilt effect</h3>
+            <p>You can use tilt effect on any photo in this template. By default effect applied on drawer photo only. More information about script you can find <a href="http://tympanus.net/Development/ImageTiltEffect/" target="_blank">here</a>.</p>
+
+            <p>If you want use left drawer without tilt effect connect the following file – <strong>drawer.js</strong>. For using tilt effect in left drawer replace file with <strong>drawer-tilt.js</strong></p>
+
+            <h3 id="doc-0311">Responsive layout</h3>
+            <p>The template supports responsive/adaptive layout via <strong>responsive.css</strong>.</p>
+
+            <h3 id="doc-0312">Retina support</h3>
+            <p>The template is retina-ready. Connect the following script to enable this feature:</p>
+<pre>
+&lt;script src="static/vendor/retinajs/dist/<span class="text-primary">retina.min.js</span>"&gt;&lt;/script&gt;<span class="text-muted">&lt;!-- retina main library (retina.js plugin) --&gt;</span>
+</pre>
+
+            <h3 id="doc-0313">Themes and colors</h3>
+            <p>Template already has some themes. For easily customizing theme edit <strong><em>theme.less</em></strong> and <em>@import</em> it to the <strong><em>main.less</em></strong>.</p>
+            <p>Typical <strong><em>theme.less</em></strong> file:</p>
+<pre>
+// USER SETTINGS (Theme)
+//----------------------------------------------------
+
+// COLORS
+@color-main: #ffc75b; // Main color
+@color-text-main: #333; // Main color fo text
+@color-bg: #fff; // Main color for background
+@color-bg-overlay: rgba(0,0,0,.75); // Overlay for background photos or video (optional)
+
+// Fonts
+@font-01: 'Montserrat'; // Font for headings, accents
+@font-02: 'Open Sans'; // Regular text
+
+// BACKGROUNDS
+@background-static-image: '@{path-images}/backgrounds/static_image.jpg'; // Main background (optional)
+@bg-logo: '@{path-images}/logos/logo_black.png'; // Logo for background (about section)
+</pre>
+        </section>
+
+        <section>
+            <h2 id="doc-04">Styles</h2>
+            <div class="separator half"></div>
+
+            <h3 id="doc-0401">Location</h3>
+            <p>Styles are located in the <em>static/styles</em> folder. Files are represented as CSS and LESS.</p>
+
+            <h3 id="doc-0402">Styles description</h3>
+            <p>The list of the style files:</p>
+            <ul>
+                <li><strong>main.less, main.css</strong> – main template styles,</li>
+                <li><strong>responsive.less, responsive.css</strong> – responsive/adaptive styles,</li>
+                <li><strong>variables.less</strong> – variables for <strong>main.less</strong>,</li>
+                <li><strong>theme.less</strong> – template theme for <strong>main.less</strong></li>
+                <li><strong>main_*.css</strong> – converted template theme from <strong>main.less</strong> with selected <strong>theme.less</strong>.</li>
+            </ul>
+
+            <h3 id="doc-0403">Vendor styles</h3>
+            <p>Template uses 3rd-party styles, their location is – <em>static/vendor/*</em>. The script/library connected to the template can have its own styles set. We highly recommend you to connect them from the specified path.
+            </p>
+
+            <h3 id="doc-0404">LESS</h3>
+            <p>Template includes a set of LESS-files. They enable you to modify styles easily due to the language features. Find all the details about LESS <a href="http://lesscss.org/" target="_blank">here</a>.</p>
+            <div class="doc-note">The template does not use LESS-files directly. To connect them you need to install js-script allowing to convert LESS to CSS on the go. Alternatively we recommend you to download a LESS-compiler from <a href="http://winless.org/" target="_blank">here (windows)</a> or <a href="http://incident57.com/less/" target="_blank">here (mac)</a>.</div>
+        </section>
+
+        <section>
+            <h2 id="doc-05">Scripts</h2>
+            <div class="separator half"></div>
+
+            <h3 id="doc-0501">Location and content</h3>
+            <p>All the user scripts are located in <em>static/scripts</em> folder, external libraries (such as jquery, bootstrap, etc) are located in <em>static/vendor</em>.</p>
+
+            <h3 id="doc-0502">Template scripts</h3>
+            <p>List of the main script files:</p>
+                <ul>
+                    <li><strong><span class="text-muted">static/scripts/</span>clients-carousel.js</strong> – script for client carousel,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>drawer.js</strong>,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>drawer-tilt.js</strong> – scripts for using left drawer (use on of them),</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>elastic-fields.js</strong> – script for auto-height of contact form fields,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>fancybox.js</strong> – settings for Fancybox 2,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>feedback.js</strong> – script for feedback function,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>fitvids.js</strong> – init for responsive video (fitvids.js),</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>form-effects.js</strong> – script for form input effects,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>fullscreen.js</strong> – script for fullscreen welcome section,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>maps.js</strong> – google maps,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>menu.js</strong> – script main nav,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>parallax.js</strong>,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>parallax-topic.js</strong> – settings for parallax images</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>portfolio.js</strong> – script for portfolio,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>scroll-to.js</strong> – smoothing scroll,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>search.js</strong> – script for search input (only decorate),</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>vegas.js</strong> – settings for vegas,</li>
+                    <li><strong><span class="text-muted">static/scripts/</span>videobg.js</strong> – script for background video,</li>
+                </ul>
+
+            <h3 id="doc-0503">Vendor scripts</h3>
+            <p>Template uses vendor scripts  (and their dependencies), their location is – <em>static/vendor/*</em>. It is recommended to connect them from the specified path.</p>
+            <p>List of some vendor scripts:</p>
+                <ul>
+                    <li><strong><a href="http://getbootstrap.com" target="_blank">Bootstrap</a></strong> – Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</li>
+                    <li><strong><a href="http://fancyapps.com/fancybox/" target="_blank">Fancybox 2</a></strong> – a tool that offers a nice and elegant way to add zooming functionality for images, html content and multi-media on your webpages,</li>
+                    <li><strong><a href="http://fitvidsjs.com" target="_blank">fitvids.js</a></strong> – a lightweight, easy-to-use jQuery plugin for fluid width video embeds,</li>
+                    <li><strong><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a></strong> – Font Awesome gives you scalable vector icons that can instantly be customized,</li>
+                    <li><strong><a href="https://jquery.com" target="_blank">jQuery</a></strong> – a fast, small, and feature-rich JavaScript library,</li>
+                    <li><strong><a href="http://jqueryvalidation.org" target="_blank">jquery.validation</a></strong> – plugin makes simple clientside form validation easy,</li>
+                    <li><strong><a href="http://pixelcog.github.io/parallax.js/" target="_blank">parallax.js</a></strong> – a dirt simple parallax scrolling effect inspired by Spotify.com and implemented as a jQuery plugin</li>
+                    <li><strong><a href="http://imulus.github.io/retinajs/" target="_blank">Retinajs</a></strong> – an open source script that makes it easy to serve high-resolution images to devices with retina displays,</li>
+                    <li><strong><a href="http://vegas.jaysalvat.com" target="_blank">Vegas</a></strong> – a jQuery/Zepto plugin to add beautiful backgrounds and Slideshows to DOM elements,</li>
+                </ul>
+                <div class="doc-note"><strong>Vide.js</strong> not correctly work with last version of jQuery. While the developers will fix it, we did it ourselves. You must use fixed version file <strong><em>fixed_jquery.vide.js</em></strong> or <strong><em>fixed_jquery.vide.min.js</em></strong> (minified version).</div>
+        </section>
+
+        <!-- <section>
+            <h2 id="doc-06">Help / FAQ</h2>
+            <div class="separator half"></div>
+
+        </section> -->
+
+        <section>
+            <!-- Releases and Updates -->
+            <h2 id="doc-07">Releases and Updates</h2>
+            <div class="separator half"></div>
+            <h4>Version 1.0 <small class="text-muted">/ 07.07.2017</small></h4>
+
+            <p>The first version released.</p>
+
+
+            <!-- Credits -->
+            <h2 id="doc-08">Credits</h2>
+            <div class="separator separator-half"></div>
+            <p>Estro is created by <a href="http://team.artrow.net/" target="_blank">ArtRow Team</a>, 2017. All Rights reserved.</p><br>
+
+            <h4>Media content</h4>
+            <p><small>
+                Photos are from <a href="http://unsplash.com" target="_blank">Unsplash</a>, <a href="https://picjumbo.com" target="_blank">PicJumbo</a>. Videos are from <a href="http://thecliparchive.com." target="_blank">thecliparchive.com</a>.
+            </small></p>
+        </section>
+    </div>
+</div>
+
+<script src="../static/vendor/jquery/dist/jquery.min.js"></script>
+<script src="../static/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

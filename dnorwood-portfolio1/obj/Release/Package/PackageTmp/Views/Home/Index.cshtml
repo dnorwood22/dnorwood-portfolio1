@@ -1,0 +1,691 @@
+﻿@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dexter Norwood - Web Developer & Web Designer</title>
+
+    <meta name="description" content="ESTRO – Responsive HTML Template">
+    <meta name="author" content="ArtRow Team">
+
+    <link rel="shortcut icon" href="~/assets/static/images/fav.png" type="image/png">
+
+    <!-- vendor styles -->
+    <link href="~/assets/static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"><!-- Bootstrap -->
+    <link href="~/assets/static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" media="screen"><!-- Font Awesome -->
+    <link href="~/assets/static/vendor/fancybox/source/jquery.fancybox.css" rel="stylesheet" media="screen"><!-- Fancybox styles -->
+    <link href="~/assets/static/vendor/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" media="screen"><!-- Owl carousel -->
+    <link href="~/assets/static/vendor/ImageTiltEffect/css/tilteffect.css" rel="stylesheet" media="screen"><!-- Tilt Effect -->
+    <!-- template styles -->
+    <link href="~/assets/static/styles/main.css" rel="stylesheet" media="screen"><!-- main template styles -->
+    <link href="~/assets/static/styles/responsive.css" rel="stylesheet" media="screen"><!-- responsive styles -->
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'><!--Font OpenSans -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!--Font Montserrat -->
+    <link href="~/Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shCoreDjango.css" rel="stylesheet" />
+    <link href="~/Content/SyntaxHighlighter/shThemeDjango.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+
+</head>
+<body class="overlay" data-spy="scroll" data-target="#navbar-main" data-offset="50">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top black-style">
+        <div class="container-fluid">
+            <!-- Toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div><!-- Toggle get grouped for better mobile display -->
+            <!-- Nav list -->
+            <div class="collapse navbar-collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li><a href="#welcome" class="scroll-to">Welcome<span class="sr-only">(current)</span></a></li>
+                    <li><a href="#about-me" class="scroll-to">About me</a></li>
+                    <li><a href="#resume" class="scroll-to">Resume</a></li>
+                    <li><a href="#works" class="scroll-to">Works</a></li>
+                    <li><a href="#contacts" class="scroll-to">Contacts</a></li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("Blog","Home")">Blog</a></li>
+                            <li role="separator" class="divider"></li>
+                            @*<li><a href="documentation/documentation.html">Read documentation</a></li>*@
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- Nav list -->
+        </div>
+    </nav>
+    <!-- /Navigation -->
+    <!-- Welcome section -->
+    <section class="welcome-section-wrapper js-fullscreen" id="welcome">
+        <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-color: transparent; background-repeat: no-repeat; background-position: 50% 50%;"><video autoplay="" loop="" muted="" style="margin: auto; top: 50%; left: 50%; width: auto; height: 1155px;"><source src="~/assets/static/video/brain video.mp4" type="video/mp4"><source src="~/assets/static/video/brain.webm" type="video/webm"><source src="~/assets/static/video/video.ogv" type="video/ogg"></video></div>
+        <div class="welcome-section-inner container text-center">
+            @*<img src="~/assets/static/images/logos/coding-workspace.jpg" alt="welcome-logo" class="welcome-logo">*@
+            <div class="title-main"><span><strong class="text-color">Dexter Norwood</strong></span></div>
+            <div class="subtitle-main">Full Stack ASP.Net Developer</div>
+            <p class="description-main white bordered">
+                I develop applications that suprise and delight peopele. That feel personal, unique and genuine.
+            </p>
+        </div>
+        <div class="scroll-down"></div>
+    </section>
+    <!-- /Welcome section -->
+    <!-- About section -->
+    <section class="section-wrapper bg-theme" id="about-me">
+        <div class="about-section-inner container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <img src="~/assets/static/images/backgrounds/IMG_2338.JPG" class="img-responsive position-left" alt="">
+                </div>
+
+                <div class="col-xs-12 col-md-6 bg-logo top right">
+                    <h2>About Me</h2>
+                    <blockquote>
+                        You have to learn the rules of the game. And then you have to play better than everyone else.
+                        <footer>Albert Einstein </footer>
+                    </blockquote>
+                    <p>Hello, my name is Dexter Norwood. I am a developer from Fayetteville, NC, currently residing in the Greensboro area. I have a passion for creativity 
+                    and innovation. I live for the challenge to create new trendy software that makes the users imagination wonder faraway from the computer screen.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Additional Information</h3>
+                    <p>I embarked on this journey without knowing what to expect or if it was the best situation for me at the time. I just had a great passion for creativity,
+                    quality, change and innovation. After being under the expert tutelage of CoderFoundry, I now have the confidence to take on complex challenges and disect them
+                    writing complex pieces of code.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /About section -->
+
+    <div class="between-sections empty" style="padding:10px 10px">
+        <img src="~/assets/static/images/backgrounds/Learning-Featured1.jpg" />
+    </div>
+
+    <!-- Resume section -->
+    <section class="section-wrapper bg-theme" id="resume">
+        <div class="resume-section-inner container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Resume</h2>
+                    <blockquote>
+                        <p><b>At first they'll ask you why you're doing it. Later they'll ask how you did it.</b></p>
+                    </blockquote>
+                    <blockquote>
+                        <p><b>Working for something we don't care about is called stress. Working for something that we love is called Passion.</b></p>
+                    </blockquote>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- Employment / Education section -->
+                <div class="col-xs-12 col-md-8 resume-column">
+                    <!-- Employment section -->
+                    <h3>Employment</h3>
+                    <img src="~/assets/static/images/backgrounds/future desk.jpg" alt="" class="img-responsive">
+                    <ul class="resume-employment">
+                        <li class="row">
+                            <div class="col-xs-12 col-sm-3 dates">
+                                <h4>April 2013-March 2017</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 description">
+                                <h4>QA/QC Technician</h4>
+                                <div class="subtitle">Procter & Gamble</div>
+                                <p>Achieves quality assurance operational objectives by contributing information and analysis to strategic plans and reviews; preparing and completing action plans; implementing production, productivity, quality, and customer-service standards; identifying and resolving problems; completing audits; determining system improvements; implementing change.</p>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-12 col-sm-3 dates">
+                                <h4>August 2012 – April 2013</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 description">
+                                <h4>Specimen Accessioner</h4>
+                                <div class="subtitle">LabCorp</div>
+                                <p>Prepares laboratory specimens for designated departments/locations prior to laboratory analysis and testing. </p>
+                            </div>
+                        </li>
+                    </ul><!-- /Employment section -->
+                    <!-- Education section -->
+                    <h3>Education</h3>
+                    <img src="~/assets/static/images/backgrounds/cyber.jpg" alt="" class="img-responsive">
+                    <ul class="resume-employment">
+                        <li class="row">
+                            <div class="col-xs-12 col-sm-3 dates">
+                                <h4>June 2017 – November 2017</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 description">
+                                <h4>Software Developer</h4>
+                                <div class="subtitle">CoderFoundry</div>
+                                @*<p>I currently work for Google. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>*@
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-12 col-sm-3 dates">
+                                <h4>August 2006 – May 2011</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 description">
+                                <h4>Sports Science</h4>
+                                <div class="subtitle">NC A&T State University</div>
+                                @*<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</p>*@
+                            </div>
+                        </li>
+                    </ul><!-- /Education section -->
+                </div><!-- /Employment / Education section -->
+                <!-- Skiils / Download section -->
+                <div class="col-xs-12 col-md-4">
+                    <!-- Skiils section -->
+                    <h3>My Skills</h3>
+                    <ul class="resume-skills">
+                        <li>
+                            <div class="skill-title">HTML</div>
+                            <ul class="skill-levels">
+                                <li class="active">Great</li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="skill-title">CSS</div>
+                            <ul class="skill-levels">
+                                <li class="active">Great</li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="skill-title">C#</div>
+                            <ul class="skill-levels">
+                                <li class="active">Great</li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="skill-title">JavaScript</div>
+                            <ul class="skill-levels">
+                                <li class="active">Great</li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                                <li class="active"></li>
+                            </ul>
+                        </li>
+                    </ul><!-- /Skiils section -->
+                    <!-- Download section -->
+                    <h3>Download</h3>
+                    <ul class="download-section">
+                        @*<li>
+                            <a href="" class="download-btn-wrapper">
+                                <div class="icon text-center">
+                                    <i class="fa fa-camera-retro fa-2x"></i>
+                                </div>
+                                <div class="description">
+                                    <div class="download-btn">Photos</div>
+                                </div>
+                            </a>
+                        </li>*@
+                        <li>
+                            <a href="~/documentation/DEXTER NORWOOD- resume 3.pdf" class="download-btn-wrapper" target="_blank">
+                                <div class="icon text-center">
+                                    <i class="fa fa-file-pdf-o fa-2x"></i>
+                                </div>
+                                <div class="description">
+                                    <div class="download-btn">Resume PDF</div>
+                                </div>
+                            </a>
+                        </li>
+                        @*<li>
+                            <a href="" class="download-btn-wrapper">
+                                <div class="icon text-center">
+                                    <i class="fa fa-file-word-o fa-2x"></i>
+                                </div>
+                                <div class="description">
+                                    <div class="download-btn">Resume Word</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="download-btn-wrapper">
+                                <div class="icon text-center">
+                                    <i class="fa fa-file-archive-o fa-2x"></i>
+                                </div>
+                                <div class="description">
+                                    <div class="download-btn">Archive</div>
+                                </div>
+                            </a>
+                        </li>*@
+                    </ul><!-- /Download section -->
+                </div><!-- Skiils / Download section -->
+            </div>
+        </div>
+    </section>
+    <!-- /Resume section -->
+
+    <div class="between-sections empty row" style="width:100%; padding: 5px 5px 5px 5px;">
+        <img src="~/assets/static/images/backgrounds/atoms.jpg" />
+        <div class="w3-panel w3-card-6 w3-light-grey col-md-2" style="width:20%">
+            <p class=" w3-large w3-serif">
+                <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
+                Everyone should know how to program a computer, because it teaches you how to think!
+                <footer>Steve Jobs</footer>
+            </p>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <section class="section-wrapper bg-theme" id="works">
+        <div class="works-section-inner container">
+            <div class="row">
+                <div class="col-xs-12 bg-logo top right">
+                    <h2>Works</h2>
+                    <blockquote>
+                        <p>Success is not Final. Failure is not Fatal: It is the Courage to continue that counts.</p>
+                        <footer>Winston Churchill</footer>
+                    </blockquote>
+                    @*<p>
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium <a href="">doloremque laudantium</a>, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.<br>
+                        Aliquam id mattis eros, sit amet efficitur eros. Donec quis sem pharetra, fermentum metus vitae, efficitur ex. Fusce sed vehicula arcu. Mauris cursus tortor at tincidunt porta. Sed vitae sapien nec leo vestibulum molestie. Sed placerat accumsan dolor, ac pharetra eros pulvinar id. Quisque id lacinia nulla, quis gravida est. Suspendisse potenti.
+                    </p>*@
+                </div>
+            </div>
+
+            <!-- Featured section -->
+            <div class="double-part-wrapper">
+                <div class="carousel-block row">
+                    <!-- Left side (title part) -->
+                    <div class="title-part col-md-6">
+                        <div class="title">Works</div>
+                        <!-- featured first work -->
+                        <div class="caption-outside-wrapper">
+                            <div class="caption-title">JavaScript: Factorial Exercise</div>
+                            <div class="icons-line-wrapper">
+                                <div class="icons-line">
+                                    <a href="" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
+                                    <a href="" class="l-tooltip l-link"><i class="fa fa-link"></i></a>
+                                    <a href="" class="l-tooltip l-share"><i class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="caption-description">Write a function that calculates the factorial of a number. The factorial of a non-negative interger n, denoted by n!, is the product of all positive integers less than or equal to n. (i.e. 5! = 5 x 4 x 3 x 2 x 1 = 120)</p>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#FactorialModal">Open</button>
+                        </div><!-- /featured first work -->
+                        <!-- featured second work -->
+                        <div class="caption-outside-wrapper hide">
+                            <div class="caption-title">JavaScript: FizzBuzz Exercise</div>
+                            <div class="icons-line-wrapper">
+                                <div class="icons-line">
+                                    <a href="" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
+                                    <a href="" class="l-tooltip l-link"><i class="fa fa-link"></i></a>
+                                    <a href="" class="l-tooltip l-share"><i class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="caption-description">Write a program that iterates the integers from 1 to 100, printing the numbers to the screen. For each number that is a multiple of 3, however, print "Fizz" instead of the number. For multiples of 5 print "Buzz" instead of the number. For numbers that are multiples of both print "FizzBuzz."</p>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#FizzBuzzModal">Open</button>
+                        </div><!-- /featured second work -->
+                        <!-- featured third work -->
+                        <div class="caption-outside-wrapper hide">
+                            <div class="caption-title">JavaScript: Palindrome Exercise</div>
+                            <div class="icons-line-wrapper">
+                                <div class="icons-line">
+                                    <a href="" class="l-tooltip l-external-link"><i class="fa fa-external-link-square"></i></a>
+                                    <a href="" class="l-tooltip l-link"><i class="fa fa-link"></i></a>
+                                    <a href="" class="l-tooltip l-share"><i class="fa fa-share-alt"></i></a>
+                                </div>
+                            </div>
+                            <p class="caption-description"> Write a function to determine if the string is a Palindrome(the same forward and backwards) or if the string is not a Palindrome.</p>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#PalindromeModal">Open</button>
+                        </div><!-- /featured third work -->
+                    </div><!-- Left side (title part) -->
+                    <!-- Right side (cover part) -->
+                    <div class="cover-part tabs col-md-6">
+                        <div id="carousel-featured" class="carousel fade" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-featured" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-featured" data-slide-to="1"></li>
+                                <li data-target="#carousel-featured" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner w3-hover-sepia" role="listbox">
+                                <div class="item active">
+                                    <img src="~/assets/static/images/logos/03-macbook-air-flickr-javascript.jpg" alt="...">
+                                    <p>Factorial Exercise</p>
+                                </div>
+                                <div class="item">
+                                    <img src="~/assets/static/images/logos/coding-workspace.jpg" alt="...">
+                                    <p>FizzBuzz</p>
+                                </div>
+                                <div class="item">
+                                    <img src="~/assets/static/images/logos/spic-software-development1.jpg" alt="...">
+                                    <p>Palindrome</p>
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-featured" role="button" data-slide="prev">
+                                <div class="underline-small">Prev work</div>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-featured" role="button" data-slide="next">
+                                <div class="underline-small">Next work</div>
+                            </a>
+                        </div>
+                    </div><!-- Right side (cover part) -->
+                </div>
+            </div><!-- /Featured section -->
+            <!-- Portfolio -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Portfolio</h3>
+
+                    <div class="portfolio-wrapper">
+                        <!-- portfolio filter -->
+                        @*<ul class="portfolio-filter js-portfolio-filter">
+                            <li class="active"><a href="javascript:void(0);" data-filter="*">All works</a></li>
+                            
+                        </ul>*@<!-- /portfolio filter -->
+                        <!-- portfolio content -->
+                        <div class="portfolio-content grid" data-url="portfolio.php?filter={filter}&offset={offset}&limit={limit}">
+                            <!-- Content loads automatically from portfolio_content.html -->
+                        </div><!-- portfolio content -->
+                        @*<a class="load-more text-white js-load-more">Load more works . . .</a>*@
+                    </div>
+                </div>
+            </div><!-- /Portfolio -->
+        </div>
+    </section>
+    <!-- /Works section -->
+    <!-- logos (clients) section -->
+    <div class="between-sections">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul id="owl-clients" class="owl-carousel">
+                        <li><img src="~/assets/static/images/backgrounds/helmfon3-1.jpg" alt=""></li>
+                        <li><img src="~/assets/static/images/backgrounds/tech eye.jpg" alt=""></li>
+                        <li><img src="~/assets/static/images/backgrounds/future computer.jpg" alt=""></li>
+                        <li><img src="~/assets/static/images/backgrounds/futurewindows.jpg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /logos (clients) section -->
+    <!-- Contacts section -->
+    <section class="section-wrapper bg-theme" id="contacts">
+        <div class="contacts-section-inner container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Contacts</h2>
+                </div>
+            </div>
+
+            <!-- contact information -->
+            <div class="double-part-wrapper">
+                <!-- Left side (cover part) -->
+                <div class="title-part">
+                    <div class="title">contact information</div>
+                    <div id="caption-featured" class="caption-outside-wrapper">
+                        <div class="caption-title">Dexter Norwood</div>
+                        <ul class="list-with-icons contacts">
+                            <li><i class="fa fa-phone"></i>(910) 261-1475</li>
+                            <li><i class="fa fa-map-marker"></i>3710 Brevard St. Greensboro, NC 27407</li>
+                            <li><i class="fa fa-envelope-o"></i>dnorwood22@gmail.com</li>
+                            @*<li><i class="fa fa-globe"></i>www.com</li>*@
+                        </ul>
+                    </div>
+                </div><!-- /Left side (cover part) -->
+                <!-- Right side (cover part) -->
+                <div class="cover-part tabs">
+                    <img src="~/assets/static/images/logos/coding-workspace.jpg" />
+                </div><!-- /Right side (cover part) -->
+            </div><!-- /contact information -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Drop me a line</h3>
+                </div>
+            </div>
+
+            <!-- feedback section -->
+            <div class="row">
+                <div class="col-xs-12 col-md-6 contacts-col-left">
+                    <p class="text-right">@*Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>*@
+                    <p class="text-right text-muted"><em>Dexter Norwood</em></p>
+                </div>
+                <div class="col-xs-12 col-md-6 contacts-col-right">
+                    <form class="drop-line js-feedback-form" action="feedback.php">
+                        <span class="input">
+                            <input class="input-field js-check-name" type="text" id="input-name" name="name">
+                            <label class="input-label" for="input-name">
+                                <span class="input-label-content">Name</span>
+                            </label>
+                        </span>
+                        <span class="input">
+                            <input class="input-field js-check-email" type="email" id="input-mail" name="email">
+                            <label class="input-label" for="input-mail">
+                                <span class="input-label-content">Your mail</span>
+                            </label>
+                        </span>
+                        <span class="input">
+                            <textarea class="input-field elastic js-check-message" rows="1" id="input-message" name="message"></textarea>
+                            <label class="input-label" for="input-message">
+                                <span class="input-label-content">Your message</span>
+                            </label>
+                        </span>
+                        <button class="btn btn-default" type="submit">Sent Message</button>
+                    </form>
+                </div>
+            </div><!-- feedback section -->
+
+        </div>
+    </section>
+    <!-- /Contacts section -->
+    <!-- Footer section -->
+    <section class="footer-section inverted bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <img src="~/assets/static/images/backgrounds/brain pic.jpg" class="footer-logo" alt="">
+                    <div class="footer-content">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 left">
+                                <span>Development by </span><a href="http://team.artrow.net" target="_blank">team.artrow.net</a>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 right">
+                                2016, All rights reserved
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row footer-row">
+                        <!-- social icons -->
+                        <div class="col-xs-12 col-sm-8 left socials">
+                            <ul class="list-underline">
+                                <li>
+                                    <div class="title" target="_blank">Linkedin</div>
+                                    <a href="https://www.linkedin.com/in/dexter-norwood-0ab78773/"><i class="fa fa-linkedin-square"></i></a>
+                                </li>
+                                @*<li>
+                                    <div class="title">Twitter</div>
+                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                </li>*@
+                                @*<li>
+                                    <div class="title">Pinterest</div>
+                                    <a href=""><i class="fa fa-pinterest-p"></i></a>
+                                </li>*@
+                            </ul>
+                        </div><!-- /social icons -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Footer section -->
+    <!-- Drawer -->
+    @*<div class="drawer-wrapper hide">
+        <div class="scrollable">
+            <div class="tilt-effect-wrapper photo-main">
+                <img src="http://placehold.it/480x380" alt="" class="" />
+            </div>
+            <div class="drawer-inside text-white">
+                <h1 class="text-white">Dexter Norwood</h1>
+                <div class="subheading">Designer, Creator, Developer</div>
+                <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ut labore et dolore magnam aliquam quaerat voluptatem.</em></p>
+            </div>
+        </div>
+    </div>*@
+
+    <!-- drawer-toggle for show/hide left drawer -->
+    <div class="js-drawer-toggle drawer-toggle" data-target=".drawer-wrapper">
+        <div class="icon-drawer-wrapper">
+            <img src="~/assets/static/images/backgrounds/brain pic.jpg" alt="">
+        </div>
+    </div><!-- /drawer-toggle for show/hide left drawer -->
+    <!-- /Drawer -->
+    
+    <!-- Modals -->
+    <div id="FactorialModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="background-color: white; padding: 15px 20px">
+            <h1>Factorial</h1>
+            <input type="number" style="color:black" id="testNumber" />
+            <button onclick="numFac()" style="color:black">Execute</button>
+            <div id="total"></div>
+            <pre class="brush: js">
+            function numFac() {
+                var i, num, fact;
+                fact = 1;
+                num = Number(document.getElementById("testNumber").value);
+
+                for (i = 1; i <= num; i++) {
+                    fact = fact * i;
+                }
+                document.getElementById("total").innerHTML = fact;
+            }
+         </pre>
+        </div>
+    </div>
+
+    <div id="FizzBuzzModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="background-color: white; padding: 15px 20px">
+            <h1>FIZZBUZZ</h1>
+            
+            <input type="number" id="testNumber2" />
+
+            <input type="number" id="testNumber3" />
+
+            <button onclick="fizzBuzz()">Execute</button>
+            <div id="result"></div>
+            <pre class="brush: js">
+            function fizzBuzz() {
+            var firstNumber = Number(document.getElementById("testNumber2").value);
+            var secondNumber = Number(document.getElementById("testNumber3").value);
+            var result = "";
+            for (var i = 1; i <= 100; i++) {
+
+            if (i % firstNumber == 0 && i % secondNumber == 0) {
+            result += " fizzbuzz ";
+            }
+            else if (i % firstNumber == 0) {
+            result += " fizz ";
+            }
+            else if (i % secondNumber == 0) {
+            result += " buzz ";
+            }
+
+            else {
+            result += i + " ";
+            }
+            }
+            document.getElementById("result").innerHTML = result;
+
+            }
+            </pre>
+        </div>
+    </div>
+
+    <div id="PalindromeModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="background-color: white; padding: 15px 20px">
+            <input type="text" id="word" />
+            <button onclick="palindrome(word.value)">Execute</button>
+            <div id="answer"></div>
+            <pre class="brush: js">
+            function palindrome(str) {
+            var str = str.toLowerCase();
+            for (var str.split("").reverse().join("") === str) {
+            document.getElementById("answer").innerHTML = str + " is a Palindrome.";
+            } else {
+            document.getElementById("answer").innerHTML = str + " is NOT a Palindrome.";
+            }
+            }
+            </pre>
+        </div>
+    </div>
+
+
+        
+
+        <script src="~/assets/static/vendor/jquery/dist/jquery.min.js"></script><!-- jQuery library -->
+        <script src="~/assets/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script><!-- bootstrap library -->
+        <script src="~/assets/static/vendor/fancybox/source/jquery.fancybox.pack.js"></script><!-- Fancybox library -->
+        <script src="~/assets/static/vendor/fancybox/source/helpers/jquery.fancybox-media.js"></script><!-- Fancybox helper -->
+        <script src="~/assets/static/vendor/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script><!-- Fancybox mousewheel -->
+        <script src="~/assets/static/vendor/owl.carousel/dist/owl.carousel.min.js"></script><!-- carousel library -->
+        <script src="~/assets/static/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script><!-- smooth scroll library -->
+        <script src="~/assets/static/vendor/jquery-elastic/jquery.elastic.source.js"></script><!-- elastic library -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script><!-- Google map API -->
+        <script src="~/assets/static/vendor/gmaps/gmaps.min.js"></script><!-- gmap library -->
+        <script src="~/assets/static/vendor/isotope/dist/isotope.pkgd.min.js"></script><!-- isotope library -->
+        <script src="~/assets/static/vendor/ImageTiltEffect/js/tiltfx.js"></script><!-- tilt effect -->
+        <script src="~/assets/static/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script><!-- imagesloaded library -->
+        <script src="~/assets/static/vendor/retina.js/dist/retina.min.js"></script><!-- retina library -->
+        <script src="~/assets/static/vendor/jquery-validation/dist/jquery.validate.min.js"></script><!-- jquery validation -->
+        <script src="~/assets/static/vendor/vide/dist/fixed_jquery.vide.js"></script><!-- video script -->
+        <!-- Template/user scripts -->
+        <script src="~/assets/static/scripts/scroll-to.min.js"></script>
+        <script src="~/assets/static/scripts/fancybox.min.js"></script>
+        <script src="~/assets/static/scripts/carousel.min.js"></script>
+        <script src="~/assets/static/scripts/elastic-fields.min.js"></script>
+        <script src="~/assets/static/scripts/menu.min.js"></script>
+        <script src="~/assets/static/scripts/drawer-tilt.min.js"></script>
+        <script src="~/assets/static/scripts/portfolio.min.js"></script>
+        <script src="~/assets/static/scripts/fullscreen.min.js"></script>
+        <script src="~/assets/static/scripts/maps.min.js"></script>
+        <script src="~/assets/static/scripts/feedback.min.js"></script>
+        <script src="~/assets/static/scripts/form-effects.min.js"></script>
+        <script src="~/assets/static/scripts/clients-carousel.min.js"></script>
+        <script src="~/assets/static/scripts/videobg.js"></script>
+        <script src="~/JS Exercises/Factorial.js"></script>
+        <script src="~/JS Exercises/FizzBuzz.js"></script>
+        <script src="~/JS Exercises/Palindrome.js"></script>
+    <!-- Vendor scripts -->
+    <script src="~/Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="~/Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+
+</body>
+</html>
