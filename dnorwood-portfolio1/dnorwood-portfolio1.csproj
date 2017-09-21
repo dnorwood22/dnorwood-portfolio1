@@ -112,7 +112,9 @@
     <Content Include="assets\static\images\backgrounds\Learning-Featured1.jpg" />
     <Content Include="assets\static\images\backgrounds\tech eye.jpg" />
     <Content Include="assets\static\images\logos\03-macbook-air-flickr-javascript.jpg" />
+    <Content Include="assets\static\images\logos\14490328857_c218f12da4_b.jpg" />
     <Content Include="assets\static\images\logos\coding-workspace.jpg" />
+    <Content Include="assets\static\images\logos\Dexter_lab.jpg" />
     <Content Include="assets\static\images\logos\spic-software-development1.jpg" />
     <Content Include="assets\static\styles\blog.less" />
     <Content Include="assets\static\styles\main.less" />
@@ -501,7 +503,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Properties\PublishProfiles\dnorwood-portfolio - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\dnorwood-portfolio - Web Deploy.pubxml" />
-    <Content Include="Views\Home\Blog.cshtml" />
     <Content Include="Views\Home\portfolio.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

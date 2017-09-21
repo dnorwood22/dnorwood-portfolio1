@@ -13,7 +13,7 @@
     <meta name="description" content="ESTRO – Responsive HTML Template">
     <meta name="author" content="ArtRow Team">
 
-    <link rel="shortcut icon" href="~/assets/static/images/fav.png" type="image/png">
+    <link rel="shortcut icon" href="~/assets/static/images/backgrounds/brain pic.jpg" type="image/jpg">
 
     <!-- vendor styles -->
     <link href="~/assets/static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" media="screen"><!-- Bootstrap -->
@@ -36,6 +36,43 @@
     @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
 
+    <style>
+        .parallax {
+            /* The image used */
+            background-image: url('../../assets/static/images/logos/14490328857_c218f12da4_b.jpg');
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax1 {
+            /* The image used */
+            background-image: url('../../assets/static/images/backgrounds/atoms.jpg');
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .parallax2 {
+            /* The image used */
+            background-image: url('../../assets/static/images/logos/Dexter_lab.jpg');
+            /* Set a specific height */
+            min-height: 500px;
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 <body class="overlay" data-spy="scroll" data-target="#navbar-main" data-offset="50">
 
@@ -58,14 +95,14 @@
                     <li><a href="#about-me" class="scroll-to">About me</a></li>
                     <li><a href="#resume" class="scroll-to">Resume</a></li>
                     <li><a href="#works" class="scroll-to">Works</a></li>
-                    <li><a href="#contacts" class="scroll-to">Contacts</a></li>
+                    <li><a href="#contacts" class="scroll-to">Contact</a></li>
                 </ul>
                 <div class="divider"></div>
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" target="_blank" aria-expanded="false">Blog <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="@Url.Action("Blog","Home")">Blog</a></li>
+                            <li><a href="https://dnorwood-blog.azurewebsites.net/">Blog</a></li>
                             <li role="separator" class="divider"></li>
                             @*<li><a href="documentation/documentation.html">Read documentation</a></li>*@
                         </ul>
@@ -119,9 +156,8 @@
     </section>
     <!-- /About section -->
 
-    <div class="between-sections empty img-responsive" style="padding:10px 10px">
-        <img src="~/assets/static/images/backgrounds/Learning-Featured1.jpg" />
-    </div>
+    <div class="parallax img-responsive"></div>
+    
 
     <!-- Resume section -->
     <section class="section-wrapper bg-theme" id="resume">
@@ -147,22 +183,24 @@
                     <ul class="resume-employment">
                         <li class="row">
                             <div class="col-xs-12 col-sm-3 dates">
-                                <h4>April 2013-March 2017</h4>
+                                <h4>July 2017-November 2017</h4>
+                            </div>
+                            <div class="col-xs-12 col-sm-9 description">
+                                <h4>Software Delveloper</h4>
+                                <div class="subtitle">CoderFoundry</div>
+                                <p>Creating and designing, web sites and applications using C#, MVC5, JavaScript, HTML5, Bootstrap, and MVC model binding with Razor.
+                                Employing the following languages and framworks throughout the projects:  GitHub, C#, ASP.NET, MVC, RESTful Web APIs, AJAX, Entity Framework, 
+                                SQL/SQL Server, LINQ, Stored Procedures, Razor, Javascript, Xamarin, Xamarin Forms, HTML5, CSS, & Bootstrap.</p>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-xs-12 col-sm-3 dates">
+                                <h4>April 2013 – March 2017</h4>
                             </div>
                             <div class="col-xs-12 col-sm-9 description">
                                 <h4>QA/QC Technician</h4>
                                 <div class="subtitle">Procter & Gamble</div>
                                 <p>Achieves quality assurance operational objectives by contributing information and analysis to strategic plans and reviews; preparing and completing action plans; implementing production, productivity, quality, and customer-service standards; identifying and resolving problems; completing audits; determining system improvements; implementing change.</p>
-                            </div>
-                        </li>
-                        <li class="row">
-                            <div class="col-xs-12 col-sm-3 dates">
-                                <h4>August 2012 – April 2013</h4>
-                            </div>
-                            <div class="col-xs-12 col-sm-9 description">
-                                <h4>Specimen Accessioner</h4>
-                                <div class="subtitle">LabCorp</div>
-                                <p>Prepares laboratory specimens for designated departments/locations prior to laboratory analysis and testing. </p>
                             </div>
                         </li>
                     </ul><!-- /Employment section -->
@@ -284,8 +322,7 @@
     </section>
     <!-- /Resume section -->
 
-    <div class="between-sections empty row img-responsive" style="width:100%; padding: 5px 5px 5px 5px;">
-        <img src="~/assets/static/images/backgrounds/atoms.jpg" />
+    <div class="parallax1 img-responsive">
         <div class="w3-panel w3-card-6 w3-light-grey col-md-2" style="width:20%">
             <p class=" w3-large w3-serif">
                 <i class="fa fa-quote-right w3-xxlarge w3-text-red"></i><br>
@@ -418,27 +455,14 @@
     </section>
     <!-- /Works section -->
     <!-- logos (clients) section -->
-    <div class="between-sections">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <ul id="owl-clients" class="owl-carousel">
-                        <li><img src="~/assets/static/images/backgrounds/helmfon3-1.jpg" alt=""></li>
-                        <li><img src="~/assets/static/images/backgrounds/tech eye.jpg" alt=""></li>
-                        <li><img src="~/assets/static/images/backgrounds/future computer.jpg" alt=""></li>
-                        <li><img src="~/assets/static/images/backgrounds/futurewindows.jpg" alt=""></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="parallax2"></div>
     <!-- /logos (clients) section -->
     <!-- Contacts section -->
     <section class="section-wrapper bg-theme" id="contacts">
         <div class="contacts-section-inner container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2>Contacts</h2>
+                    <h2>Contact</h2>
                 </div>
             </div>
 
@@ -458,21 +482,21 @@
                     </div>
                 </div><!-- /Left side (cover part) -->
                 <!-- Right side (cover part) -->
-                <div class="cover-part tabs">
+                <div class="cover-part tabs img-responsive">
                     <img src="~/assets/static/images/logos/coding-workspace.jpg" />
                 </div><!-- /Right side (cover part) -->
             </div><!-- /contact information -->
 
-            <div class="row">
+            @*<div class="row">
                 <div class="col-xs-12">
                     <h3>Drop me a line</h3>
                 </div>
-            </div>
+            </div>*@
 
             <!-- feedback section -->
-            <div class="row">
+            @*<div class="row">
                 <div class="col-xs-12 col-md-6 contacts-col-left">
-                    <p class="text-right">@*Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>*@
+                    <p class="text-right">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
                     <p class="text-right text-muted"><em>Dexter Norwood</em></p>
                 </div>
                 <div class="col-xs-12 col-md-6 contacts-col-right">
@@ -498,7 +522,7 @@
                         <button class="btn btn-default" type="submit">Sent Message</button>
                     </form>
                 </div>
-            </div><!-- feedback section -->
+            </div> feedback section*@ 
 
         </div>
     </section>
@@ -512,7 +536,7 @@
                     <div class="footer-content">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 left">
-                                <span>Development by </span><a href="http://team.artrow.net" target="_blank">team.artrow.net</a>
+                                <span>Development by </span><a href="" target="_blank">Dexter Norwood</a>
                             </div>
                             <div class="col-xs-12 col-sm-6 right">
                                 2016, All rights reserved
@@ -560,7 +584,7 @@
 
     <!-- drawer-toggle for show/hide left drawer -->
     <div class="js-drawer-toggle drawer-toggle" data-target=".drawer-wrapper">
-        <div class="icon-drawer-wrapper">
+        <div class="icon-drawer-wrapper img-responsive">
             <img src="~/assets/static/images/backgrounds/brain pic.jpg" alt="">
         </div>
     </div><!-- /drawer-toggle for show/hide left drawer -->
@@ -645,7 +669,7 @@
     </div>
 
 
-        
+       
 
         <script src="~/assets/static/vendor/jquery/dist/jquery.min.js"></script><!-- jQuery library -->
         <script src="~/assets/static/vendor/bootstrap/dist/js/bootstrap.min.js"></script><!-- bootstrap library -->
@@ -655,7 +679,7 @@
         <script src="~/assets/static/vendor/owl.carousel/dist/owl.carousel.min.js"></script><!-- carousel library -->
         <script src="~/assets/static/vendor/jquery.scrollTo/jquery.scrollTo.min.js"></script><!-- smooth scroll library -->
         <script src="~/assets/static/vendor/jquery-elastic/jquery.elastic.source.js"></script><!-- elastic library -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script><!-- Google map API -->
+        @*<script src="https://maps.googleapis.com/maps/api/js"></script>*@<!-- Google map API -->
         <script src="~/assets/static/vendor/gmaps/gmaps.min.js"></script><!-- gmap library -->
         <script src="~/assets/static/vendor/isotope/dist/isotope.pkgd.min.js"></script><!-- isotope library -->
         <script src="~/assets/static/vendor/ImageTiltEffect/js/tiltfx.js"></script><!-- tilt effect -->
@@ -663,6 +687,7 @@
         <script src="~/assets/static/vendor/retina.js/dist/retina.min.js"></script><!-- retina library -->
         <script src="~/assets/static/vendor/jquery-validation/dist/jquery.validate.min.js"></script><!-- jquery validation -->
         <script src="~/assets/static/vendor/vide/dist/fixed_jquery.vide.js"></script><!-- video script -->
+    <script src="~/assets/static/vendor/parallax.js/parallax.min.js"></script><!-- parallax library -->
         <!-- Template/user scripts -->
         <script src="~/assets/static/scripts/scroll-to.min.js"></script>
         <script src="~/assets/static/scripts/fancybox.min.js"></script>
@@ -677,6 +702,7 @@
         <script src="~/assets/static/scripts/form-effects.min.js"></script>
         <script src="~/assets/static/scripts/clients-carousel.min.js"></script>
         <script src="~/assets/static/scripts/videobg.js"></script>
+        <script src="~/assets/static/scripts/parallax.min.js"></script>
         <script src="~/JS Exercises/Factorial.js"></script>
         <script src="~/JS Exercises/FizzBuzz.js"></script>
         <script src="~/JS Exercises/Palindrome.js"></script>
